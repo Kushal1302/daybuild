@@ -26,7 +26,6 @@ export default function BlogCard({
     <Link href={`/blog/${slug}`} className="group relative block">
       {/* Cinematic Thumbnail Container */}
       <div className="relative aspect-video overflow-hidden border border-white/10 bg-zinc-900 transition-all duration-500 group-hover:border-accent-cyan/50 group-hover:shadow-[0_0_40px_rgba(0,229,255,0.15)]">
-        
         {/* YouTube Image */}
         <Image
           src={thumbnailUrl}
@@ -38,13 +37,13 @@ export default function BlogCard({
 
         {/* Cinematic Overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
-        
+
         {/* Play Button Icon (Visual Cue) */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-transform duration-300 group-hover:scale-110 group-hover:border-accent-cyan group-hover:bg-accent-cyan/20">
-            <svg 
-              fill="currentColor" 
-              viewBox="0 0 24 24" 
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
               className="h-5 w-5 text-white group-hover:text-accent-cyan"
             >
               <path d="M8 5v14l11-7z" />
@@ -61,15 +60,15 @@ export default function BlogCard({
           </span>
           <span className="h-px w-8 bg-white/10" />
         </div>
-        
+
         <h3 className="font-serif text-2xl leading-tight text-white transition-colors group-hover:text-accent-cyan">
           {title}
         </h3>
-        
+
         <p className="line-clamp-2 text-sm leading-relaxed text-zinc-400">
           {excerpt}
         </p>
-        
+
         <div className="flex items-center justify-between pt-2">
           <p className="text-[10px] font-medium uppercase tracking-widest text-zinc-600">
             {date}
