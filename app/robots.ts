@@ -1,3 +1,4 @@
+// app/robots.ts
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://daybuild.vercel.app/sitemap.xml", // Change to your domain
+    sitemap: "https://jsondreams.vercel.app/sitemap.xml",
   };
 }
